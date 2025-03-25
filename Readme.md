@@ -14,7 +14,7 @@ Este repositório contém a implementação dos testes de nivelamento, incluindo
 ## Requisitos
 
 
-### Dependências
+### Dependências 
 - Python 3.7 ou superior
 - Bibliotecas Python:
   - `requests`
