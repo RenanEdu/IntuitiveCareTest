@@ -23,7 +23,7 @@ with open(csv_path, mode="w", newline="", encoding="utf-8") as csv_file:
 print(f"Dados extraídos e salvos em: {csv_path}")
 
 # 2.3 Compactar o CSV em um arquivo ZIP
-zip_name = f"Teste_seu_nome.zip"
+zip_name = f"Teste_Renan.zip"
 with ZipFile(zip_name, "w") as zipf:
     zipf.write(csv_path, arcname=os.path.basename(csv_path))
 
@@ -37,7 +37,7 @@ with open(csv_path, mode="r", encoding="utf-8") as csv_file:
 for row in rows:
     rows = [col.replace("OD", "Descrição OD").replace("AMB", "Descrição AMB") for col in row]
 
-# Salvca o CSV atualizado
+# Salva o CSV atualizado
 with open(csv_path, mode="w", newline="", encoding="utf-8") as csv_file:
     writer = csv.writer(csv_file)
     writer.writerows(rows)
